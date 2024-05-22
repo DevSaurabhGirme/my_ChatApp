@@ -15,8 +15,7 @@ const Navbar = () => {
     return (
         <div className={style.nav}>
             <h1 className={style.heading}>Chat App</h1>
-            <SignIn />
-            <Logout />
+            {user ? < Logout /> : < SignIn/>}
         </div>
     );
 };
