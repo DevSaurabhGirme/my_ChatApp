@@ -1,5 +1,5 @@
-import { signInWithRedirect } from "firebase/auth";
-import { GoogleAuthProvider } from "firebase/auth/web-extension";
+import { signInWithRedirect, GoogleAuthProvider } from "firebase/auth";
+
 import React from "react";
 import {auth} from '../firebase'
 import GoogleButton from "react-google-button";
