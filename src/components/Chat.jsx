@@ -10,7 +10,7 @@ const scroll = useRef()
 
     return (
         <>
-            <main className={StylePropertyMap.main}> 
+            <main className={style.main}> 
                 <Message />
             </main>
             <span ref ={scroll}></span>
