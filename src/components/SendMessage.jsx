@@ -55,6 +55,7 @@ const SendMessage = ({scroll}) => {
 
     const inputStyle = {
         flex: '1',
+        color : 'white',
         padding: '10px',
         marginRight: '10px',
         border: '1px solid #ccc',
@@ -72,6 +73,7 @@ const SendMessage = ({scroll}) => {
         fontSize: windowWidth > 600 ? '16px' : '14px', // Adjust font size based on window width
         cursor: 'pointer',
         whiteSpace: 'nowrap',
+        borderRadius: '10px 10px 0 0',
     };
 
     const buttonHoverStyle = {
