@@ -44,12 +44,13 @@ const SendMessage = ({scroll}) => {
     const formStyle = {
         display: 'flex',
         alignItems: 'center',
-        padding: '10px',
+        padding: '6px',
         backgroundColor: '#f1f1f1',
         position: 'fixed',
         bottom: '0',
         width: '100%',
         boxSizing: 'border-box',
+        
     };
 
     const inputStyle = {
@@ -58,6 +59,7 @@ const SendMessage = ({scroll}) => {
         marginRight: '10px',
         border: '1px solid #ccc',
         borderRadius: '4px',
+        backgroundColor: '#4d4d4d',
         fontSize: windowWidth > 600 ? '16px' : '14px', // Adjust font size based on window width
     };
 
@@ -78,10 +80,10 @@ const SendMessage = ({scroll}) => {
     };
 
     return (
-        <form onSubmit={sendMessage} className={style.form}>
+        <form onSubmit={sendMessage} style={formStyle}>
             <input value={input} 
                 onChange={(e) => setInput(e.target.value)} 
-                className={style.input} type="text" placeholder="Message" />
+                style={inputStyle} type="text" placeholder="Message" />
             {/* <button className={style.button} type="submit">Send</button> */}
 
             <button
