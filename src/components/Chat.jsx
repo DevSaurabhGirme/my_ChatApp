@@ -33,7 +33,7 @@ const Chat = () => {
                 ))}
 
             </main>
-            < SendMessage />
+            < SendMessage scroll={scroll} />
             <span ref ={scroll}></span>
             
         </>
