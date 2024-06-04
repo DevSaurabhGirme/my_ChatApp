@@ -66,7 +66,6 @@ const SendMessage = ({ scroll }) => {
         fontSize: windowWidth > 600 ? "16px" : "14px",
         cursor: "pointer",
         whiteSpace: "nowrap",
-        borderRadius: "10px 10px 0 0",
     };
 
     const buttonHoverStyle = {
